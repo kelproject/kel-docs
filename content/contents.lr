@@ -40,25 +40,3 @@ around managing the operations of their site.
   * Deploying a Python web app
   * Deploying a Django web app
   * Deploying a Go web app
-
-----
-
-## Layer 0
-
-* What is Layer 0?
-* Kubernetes
-
-## Layer 1
-
-* What is Layer 1?
-* Kel API
-* Kel Router
-* Kel Logging
-
-----
-
-## Basic Kel Cluster Cost
-
-### On Google Cloud Platform
-
-$583.65/mo
