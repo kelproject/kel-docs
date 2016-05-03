@@ -1,15 +1,47 @@
-<!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — Kel Documentation</title>
-<body>
-  <header>
-    <h1>Kel</h1>
-  </header>
-  <div class="page">
-    {% block body %}{% endblock %}
-  </div>
-  <footer>
-    &copy; Copyright 2016 by Eldarion, Inc.
-  </footer>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ '/static/fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css'|asseturl }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="icon" href="/static/images/favicon.png" type="image/png">
+    <title>{% block title %}Welcome{% endblock %} — Kel Documentation</title>
+  </head>
+  <body>
+    <header class="header-primary">
+      <div class="primary-header-wrapper container flex-container m-b-3">
+        <div class="header-topbar">
+          <img class="hidden-sm-up" src="/static/images/logo_simple.svg" alt="Kel circular ship logo" width="80px" />
+          <img class="hidden-xs-down" src="/static/images/logo_full.svg" alt="Kel circular ship logo" width="90px" />
+          <nav class="navbar text-uppercase">
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">&#9776;
+            </button>
+            <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+              <a class="nav-item nav-link" href="#">Docs</a>
+              <!--<a class="nav-item nav-link" href="#">Blog</a>-->
+              <a class="nav-item nav-link" href="#">GitHub</a>
+              <a class="nav-item nav-link" href="#">Slack</a>
+              <a class="nav-item nav-link" href="https://twitter.com/ProjectKel">Twitter</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="page container">
+      {% block body %}{% endblock %}
+    </div>
+    <footer class="footer-primary m-t-3 p-a-1">
+      <div class="footer-wrapper flex-container">
+        <a href="http://eldarion.com/"><img src="/static/images/eldarion_logo.svg" alt="Official Eldarion Logo" width="50px" /></a>
+        <small>&copy; 2010–2016 Eldarion, Inc.</small>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  </body>
+</html>
