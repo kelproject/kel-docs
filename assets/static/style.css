@@ -1,8 +1,8 @@
 /* MOBILE FIRST */
 
 /* General */
-body {
-    font-family: 'Open Sans', sans-serif !important;
+html body {
+    font-family: 'Open Sans', sans-serif;
     color: #333232;
 }
 
@@ -51,7 +51,7 @@ pre {
   -webkit-align-items: flex-start;
 }
 
-.navbar {
+.header-topbar .navbar {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -62,7 +62,8 @@ pre {
   -webkit-justify-content: flex-start;
   -webkit-align-items: flex-end;
   -webkit-align-self: flex-start;
-  padding: 1.3em 0 .5em;
+  margin-top: 15px;
+  padding: 0;
   color: white;
   text-align: right;
 }
@@ -109,6 +110,10 @@ pre {
     margin-bottom: 5em;
   }
 
+  .header-topbar .navbar {
+    margin-top: 0;
+  }
+
   #exCollapsingNavbar2 .nav-link {
     display: inline-block;
     padding-top: 0;
@@ -153,8 +158,8 @@ pre {
 
 /* Large and up */
 @media (min-width: 992px) {
-  .primary-header-wrapper {
-    padding: .4em 0 !important;
+  .header-primary .primary-header-wrapper {
+    padding: .4em 0;
   }
 
   .header-topbar .navbar {
