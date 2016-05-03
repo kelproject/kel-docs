@@ -21,6 +21,12 @@ body {
   line-height: 1.5;
 }
 
+pre {
+  padding: .5em;
+  background: #F4F4F4;
+  border-radius: 2px;
+}
+
 /* Header/Nav */
 .header-primary {
   background: #3B3B53;
