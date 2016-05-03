@@ -28,7 +28,7 @@ pre {
 }
 
 /* Header/Nav */
-.header-primary {
+.primary-header {
   background: #3B3B53;
 }
 
@@ -46,7 +46,7 @@ pre {
   padding: .8em 0;
 }
 
-.header-topbar img {
+.header-topbar a {
   align-self: flex-start;
   -webkit-align-items: flex-start;
 }
@@ -106,8 +106,8 @@ pre {
 
 /* Small and up */
 @media (min-width: 544px) {
-  .primary-header-wrapper {
-    margin-bottom: 5em;
+  .primary-header {
+    margin-bottom: 6em;
   }
 
   .header-topbar .navbar {
@@ -158,7 +158,11 @@ pre {
 
 /* Large and up */
 @media (min-width: 992px) {
-  .header-primary .primary-header-wrapper {
+  .primary-header {
+    margin-bottom: 5em;
+  }
+
+  .primary-header .primary-header-wrapper {
     padding: .4em 0;
   }
 
