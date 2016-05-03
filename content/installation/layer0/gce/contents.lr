@@ -1,0 +1,54 @@
+title: Layer 0 Installation: Google Cloud Platform
+---
+body:
+
+This guide will take you through writing a cluster configuration and provisioning
+layer 0 on Google Cloud Platform.
+
+Before we get started, make sure the following is true:
+
+* Google Cloud SDK is installed and working
+* a GCP project exists and is currently configured with `gcloud`
+* OpenSSL installed and working
+* `kelctl` is installed and working, see [Installing kelctl](/installation/kelctl/) for more information
+* ability to set a wildcard DNS entry for the cluster (e.g., `*.example.com` or `*.my-cluster.example.com`)
+
+Create a directory anywhere on your filesystem and make it your current working
+directory:
+
+    mkdir my-cluster
+    cd my-cluster
+
+A requirement of Layer 0 is generating cryptographic keypairs to be used by
+Kubernetes. This can be easily done by running:
+
+    kelctl generate-keys
+
+This will create a `keys` directory containing everything needed for provisioning.
+
+Using `configure` we can create the initial configuration:
+
+    kelctl configure --layer=0 \
+        --name=my-cluster \
+        --domain=example.com \
+        --provider=gce \
+        --gce-project-id=<your-project-id> \
+        --gce-region=us-central1 \
+        --gce-zone=us-central1-f
+
+This will produce a file named `cluster.yml` in your current directory.
+`cluster.yml` contains all the configuration needed to interact with all layers
+of Kel. It is currently configured for only Layer 0.
+
+You are ready to provision Layer 0:
+
+    kelctl provision
+
+This will result in a working Layer 0 on Google Cloud Platform. To interact with
+Layer 0 you should use `kubectl` after obtaining the credentials:
+
+    kelctl set-kubectl-credentials
+    kubectl --context=kel-my-cluster get nodes
+
+If you see a list of nodes in the `Ready` state then you have succeeded! You can
+move on to installing [Kel Layer 1 on Layer 0](/installation/layer1/layer0/).

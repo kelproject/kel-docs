@@ -1,0 +1,64 @@
+title: Kel Documentation
+---
+body:
+
+Everything you need to know about Kel.
+
+## What is Kel?
+
+Kel is an open source Platform as a Service (PaaS) from Eldarion, Inc. that makes
+it easy to manage web application deployment and hosting through the entire
+lifecycle from development through testing to production. It adds components and
+tools on top of Kubernetes that help developers manage their application
+infrastructure. Kel builds on 7+ years experience running one of the leading
+Python and Django PaaSes.
+
+## Getting Started
+
+Kel is divided into two parts. We call them layers.
+
+**Layer 0** defines the underlying Kubernetes cluster. Kel provides tooling for
+provisioning this layer. Presently, Layer 0 is very opinionated, but over time
+we hope to gather interest of the community enabling it to run on other
+configurations.
+
+**Layer 1** are the components built to run on **any** Kubernetes cluster. The
+result of these components working together enable developers to define a workflow
+around managing the operations of their site.
+
+----
+
+* [Installing Kel](/installation/)
+  * [`kelctl` command-line tool](/installation/kelctl/)
+  * [Layer 0](/installation/layer0/)
+    * [on Google Cloud Platform](/installation/layer0/gce/)
+  * [Layer 1](/installation/layer1/)
+    * [on Layer 0](/installation/layer1/layer0/)
+    * [on Google Container Engine](/installation/layer1/gke/)
+  * [`kel` command-line tool](/installation/kel/)
+* Using Kel
+  * Deploying a Python web app
+  * Deploying a Django web app
+  * Deploying a Go web app
+
+----
+
+## Layer 0
+
+* What is Layer 0?
+* Kubernetes
+
+## Layer 1
+
+* What is Layer 1?
+* Kel API
+* Kel Router
+* Kel Logging
+
+----
+
+## Basic Kel Cluster Cost
+
+### On Google Cloud Platform
+
+$583.65/mo

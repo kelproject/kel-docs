@@ -1,0 +1,25 @@
+title: kelctl Command-Line Tool Installation
+---
+body:
+
+To install `kelctl` you need to make sure the follow is true:
+
+* Python 3.5+ installed and working
+* [pip](https://pip.pypa.io/) installed and working
+
+It doesn't matter how exactly you have your Python environment setup. This can
+be done globally or within a virtual environment. This tool was written in
+Python to better integrate with the libraries already written in Python. Due to
+it being a cluster admin tool, requring Python is less of an issue, but ideally
+this tool should be eventually ported to Go enabling static binaries.
+
+Install `kelctl`:
+
+    pip install kelctl
+
+To confirm the installation, run:
+
+    kelctl --version
+
+You can now move on to [Layer 0](/installation/layer0/) or [Layer 1](/installation/layer0/)
+installation guides to make use of `kelctl`.

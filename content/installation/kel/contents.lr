@@ -1,0 +1,19 @@
+title: kel Command-Line Tool Installation
+---
+body:
+
+To install `kel`, run:
+
+    curl -s https://get-kel.kelproject.com | bash
+
+Alternatively, you can download a binary directly and place it on your `$PATH`:
+
+* [`kel-v0.0.1-darwin-amd64`](aaa)
+* [`kel-v0.0.1-linux-amd64`](aaa)
+
+To verify the installation worked, run:
+
+    kel --version
+
+You can now move on to deploying a [Python](/), [Django](/) or [Go](/) web app
+to make use of `kel`.

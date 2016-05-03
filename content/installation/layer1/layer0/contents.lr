@@ -1,0 +1,26 @@
+title: Layer 1 Installation: Layer 0
+---
+body:
+
+This guide will take you through setting up the components to run Layer 1 on
+a previously provisioned Layer 0.
+
+Before we get started, make sure the following is true:
+
+* `kelctl` is installed and working, see [Installing kelctl](/installation/kelctl/) for more information
+
+Using the same directory used during the Layer 0 installation, run:
+
+    kelctl configure --layer=1
+
+This will update `cluster.yml` in your current directory, adding in the Layer 1
+configuration.
+
+The last step is to install the components on the cluster, run:
+
+    kelctl up
+
+Things to consider:
+
+* layer1.resources.router-ip must be set
+* router TLS configuration needed
