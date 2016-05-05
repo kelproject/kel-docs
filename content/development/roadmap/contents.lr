@@ -7,23 +7,15 @@ were unable to complete before releasing. This document highlights what's on
 our radar.
 
 * **kel-api**: finish porting over from G3A
+* **kel-api**: support more object storage backends
 * **kel-router**: implement Kubernetes ingress objects
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
-* **component**: description
+* **kel-router**: perform performance testing to improve speed
+* **kel-identity**: port over from G3A
+* **kel**: finish baseline rewrite of original G3A code
+* **kel-cluster**: support Layer 0 rolling upgrade
+* **kelctl**: add command to perform Layer 0 rolling upgrade
+* **kel-go**: better JSON:API handling
+* **pykube**: improve object diff'ing to better enable deployments
+* **kel-bundle-base**: explore other base OSes; Alpine in particular
+* **kel-bundle-builder**: rewrite buildpack handler in Go
+* **kel-bundle-runner**: rewrite process execution in Go
