@@ -1,0 +1,29 @@
+title: Roadmap
+---
+body:
+
+Eldarion open-sourced Kel on May 5, 2016. However, there are a lot of things we
+were unable to complete before releasing. This document highlights what's on
+our radar.
+
+* **kel-api**: finish porting over from G3A
+* **kel-router**: implement Kubernetes ingress objects
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
+* **component**: description
