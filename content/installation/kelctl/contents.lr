@@ -21,5 +21,5 @@ To confirm the installation, run:
 
     kelctl --version
 
-You can now move on to [Layer 0](/installation/layer0/) or [Layer 1](/installation/layer0/)
+You can now move on to [Layer 0](/installation/layer0/) or [Layer 1](/installation/layer1/)
 installation guides to make use of `kelctl`.
